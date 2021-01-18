@@ -8,7 +8,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
 import pages.*;
 import support.OpenSite;
 
@@ -67,7 +66,7 @@ public class TestDefinitions {
 
     @Test
     @When("I fill all fields whithin all pages")
-    public void i_fill_all_fields_whithin_all_pages() {
+    public void i_fill_all_fields_within_all_pages() {
         //driver.get("http://sampleapp.tricentis.com/101/app.php");
 
 
@@ -89,8 +88,8 @@ public class TestDefinitions {
 
     }
 
-    @When("I fill all forms and send quote")
-    public void i_fill_all_forms_and_send_quote() {
+    @When("having filled in all the forms, I send the quote")
+    public void having_filled_in_all_the_forms_i_send_the_quote() {
         SendQuote quote = new SendQuote(driver);
         quote.insertEmailAndSendQuote(emailValue, phoneValue, usernameValue, passwordValue, confirmPassValue);
 
